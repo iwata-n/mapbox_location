@@ -18,7 +18,7 @@ setup(
     license='MIT',
     keywords='mapbox',
     packages=find_packages(exclude=['test']),
-    install_requires=[],
+    install_requires=['mapboxgl'],
     classifiers=[
         'Programming Language :: Python :: 3.6',
     ],

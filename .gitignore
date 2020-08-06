@@ -60,3 +60,5 @@ target/
 .hypothesis
 *.ipynb_checkpoints*
 out.geojson
+
+mapbox.html

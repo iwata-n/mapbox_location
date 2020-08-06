@@ -1,0 +1,8 @@
+version: '3'
+services:
+  py:
+    build: .
+    volumes:
+      - .:/code
+    working_dir: /code
+    command: python test_viz.py
