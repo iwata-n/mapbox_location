@@ -46,7 +46,7 @@ function plot(geojson, map) {
     geojson.features.forEach(function(marker) {
         const markerSize = 23 
         const markerRotation = "" + marker.properties['{{azimuth_key}}'];
-        const markerColor = '{{color}}';
+        const markerColor = {{color}};
         const markerData = "<svg width='" + markerSize + "' height='" + markerSize + "' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg' version='1.1'><polygon fill='" + markerColor + "' stroke='black' stroke-width='1' points='20,90 50,10 80,90 50,70' transform='rotate(" + markerRotation + " 50 50)'/></svg>";
         const el = document.createElement('div');
         el.className = 'marker';

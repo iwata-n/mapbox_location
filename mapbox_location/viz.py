@@ -16,7 +16,7 @@ class ArrowViz(object):
         azimuth_key='azimuth',
         ts_key='ts',
         center=(0, 0),
-        color='red', # marker.properties['color']
+        color='"red"', # marker.properties['color']
         data=None,
         style='mapbox://styles/mapbox/light-v10?optimize=true'
     ):
