@@ -34,7 +34,7 @@ class ArrowViz(object):
         self.azimuth_key = azimuth_key
         self.ts_key = ts_key
 
-    def export(self, filename='mapbox.html'):
+    def create_html(self):
         template = env.get_template('map.html')
         html_data = template.render({
             'geojson': self.data,
@@ -46,6 +46,9 @@ class ArrowViz(object):
             'azimuth_key': self.azimuth_key,
             'ts_key': self.ts_key
         })
+        return html_data
 
+    def export(self, filename='mapbox.html'):
+        html_data = self.create_html()
         with open(filename, 'w') as f:
             f.write(html_data)

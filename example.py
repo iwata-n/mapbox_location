@@ -21,6 +21,8 @@ viz = ArrowViz(
 
 viz.export()
 
+print(viz.create_html())
+
 viz_color = ArrowViz(
     data=geodata,
     center=(35.6812362,139.7671248),
